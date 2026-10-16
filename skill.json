@@ -1,0 +1,25 @@
+{
+  "name": "genpark-klaviyo-predictive-clv-omnichannel-journey-trigger-skill",
+  "version": "1.0.0",
+  "description": "Klaviyo-inspired Predictive Customer Lifetime Value (CLV) & Omnichannel Journey Trigger. Estimates 365-day CLV using recency-frequency-monetary models, forecasts churn probability, and orchestrates personalized cross-channel flows (SMS, Email, Push) while enforcing fatigue limits.",
+  "homepage": "https://www.genpark.ai",
+  "linkedin": "https://www.llinkedin.com/company/92955550",
+  "tools": [
+    {
+      "name": "evaluate_customer_journey",
+      "description": "Calculate predictive CLV, churn risk, and trigger optimal omnichannel messaging flow.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "customer_profile": {
+            "type": "object",
+            "description": "Order history, total_spend, days_since_last_order, touchpoint_fatigue."
+          }
+        },
+        "required": [
+          "customer_profile"
+        ]
+      }
+    }
+  ]
+}
